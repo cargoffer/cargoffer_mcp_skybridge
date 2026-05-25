@@ -7,8 +7,26 @@
 <p align="center">
   <a href="https://docs.cargoffer.com/">Documentation</a> ·
   <a href="https://cargoffer.com/">Website</a> ·
-  <a href="https://github.com/cargoffer/cargo-mcp-skybridge">GitHub</a>
+  <a href="https://github.com/cargoffer/cargoffer_mcp_skybridge">GitHub</a>
 </p>
+
+---
+
+## About
+
+**Cargoffer MCP** is a [Skybridge](https://skybridge.tech) application that provides **type-safe, interactive API documentation** for the Cargoffer B2B logistics REST API. It enables AI assistants (Claude, ChatGPT, Cursor, Copilot) to explore and query the complete API surface through natural language.
+
+### Keywords
+
+`mcp` `model-context-protocol` `cargoffer` `logistics` `freight` `trucking` `trucks` `transport` `load-board` `carrier` `api-documentation` `openapi` `docs` `spanish` `english` `spain` `portugal` `latam` `b2b` `marketplace`
+
+### Release
+
+![Version](https://img.shields.io/github/v/release/cargoffer/cargoffer_mcp_skybridge?style=flat&label=release)
+![Last commit](https://img.shields.io/github/last-commit/cargoffer/cargoffer_mcp_skybridge/main)
+![License](https://img.shields.io/github/license/cargoffer/cargoffer_mcp_skybridge)
+
+---
 
 ## What is this?
 
@@ -42,8 +60,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/cargoffer/cargo-mcp-skybridge.git
-cd cargo-mcp-skybridge
+git clone https://github.com/cargoffer/cargoffer_mcp_skybridge.git
+cd cargoffer_mcp_skybridge
 
 # Install dependencies
 pnpm install
@@ -221,6 +239,6 @@ ISC - Cargoffer Team
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/cargoffer/cargo-mcp-skybridge/issues)
+- Issues: [GitHub Issues](https://github.com/cargoffer/cargoffer_mcp_skybridge/issues)
 - Email: developers@cargoffer.com
 - Website: https://cargoffer.com/
