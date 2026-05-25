@@ -1,0 +1,72 @@
+{
+  "name": "cargo-mcp-skybridge",
+  "version": "1.0.0",
+  "description": "Skybridge MCP App for Cargoffer B2B Logistics API Documentation - Type-safe, interactive API documentation for freight, trucking and logistics",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "skybridge dev",
+    "build": "skybridge build",
+    "start": "skybridge start"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "cargoffer",
+    "logistics",
+    "freight",
+    "trucking",
+    "trucks",
+    "transport",
+    "load-board",
+    "carrier",
+    "api-documentation",
+    "openapi",
+    "docs",
+    "spanish",
+    "english",
+    "spain",
+    "portugal",
+    "latam"
+  ],
+  "authors": [
+    {
+      "name": "Cargoffer Team",
+      "email": "developers@cargoffer.com"
+    }
+  ],
+  "homepage": "https://docs.cargoffer.com/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cargoffer/cargo-mcp-skybridge"
+  },
+  "license": "ISC",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.0",
+    "@skybridge/core": "^1.0.0",
+    "@skybridge/devtools": "^1.0.0",
+    "nodemon": "^3.0.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "vite": "^7.3.1"
+  },
+  "skybridge": {
+    "id": "cargo-mcp-skybridge",
+    "name": "Cargoffer API Docs",
+    "description": "Interactive API documentation for Cargoffer B2B logistics platform - search endpoints, view schemas, explore truckers, companies, and vehicle types",
+    "icon": "📦",
+    "category": "developer-tools",
+    "tags": [
+      "api",
+      "documentation",
+      "logistics",
+      "freight",
+      "trucking",
+      "spain",
+      "transport"
+    ]
+  }
+}

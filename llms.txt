@@ -1,0 +1,73 @@
+# Cargo MCP Skybridge - LLMs.txt
+
+## Project Overview
+- **Name**: cargo-mcp-skybridge
+- **Type**: MCP Server / API Documentation Tool
+- **Framework**: Skybridge (MCP Apps)
+- **Description**: Interactive API documentation MCP app for the Cargoffer B2B logistics platform
+- **Repository**: https://github.com/cargoffer/cargo-mcp-skybridge
+
+## Capabilities
+- Search API endpoints by keyword
+- View detailed endpoint documentation
+- Explore schema definitions
+- Navigate API by tags
+- Multi-locale support (Spanish, English)
+
+## Tools Available (7)
+1. **search_docs** - Search Cargoffer API docs by keywords
+2. **get_endpoint** - Get specific endpoint details
+3. **list_modules** - List all API modules
+4. **get_navigation** - Get module navigation by tags
+5. **search_by_tag** - Find endpoints by tag
+6. **get_schema** - Retrieve schema definitions
+7. **list_schemas** - List all schemas for module
+
+## Modules Covered (3)
+- **company**: 52 endpoints - Authentication, users, billing, addresses
+- **truckers**: 103 endpoints - Carriers, auctions, offers
+- **vehicle-types**: 84 endpoints - Vehicle specs, pricing
+
+## Supported Queries
+- "authentication", "login", "register", "password"
+- "user", "profile", "update user"
+- "address", "billing", "invoice"
+- "trucker", "carrier", "auction", "bid"
+- "vehicle", "type", "pricing"
+
+## Tech Stack
+- Node.js >= 22.0.0
+- Skybridge @skybridge/core
+- @modelcontextprotocol/sdk
+- React 18+
+- TypeScript
+
+## Quick Start
+```bash
+git clone https://github.com/cargoffer/cargo-mcp-skybridge.git
+cd cargo-mcp-skybridge
+pnpm install
+pnpm dev
+```
+
+## Configuration
+MCP server runs on http://localhost:3000/mcp
+
+## Use Cases
+- Integration assistance
+- API exploration
+- Schema lookup
+- Documentation search
+- Code generation reference
+
+## Related Links
+- API Docs: https://docs.cargoffer.com/
+- Main Site: https://cargoffer.com/
+- Skybridge: https://skybridge.tech/
+- MCP Protocol: https://modelcontextprotocol.io/
+
+## Metadata
+- Authors: Cargoffer Team
+- License: ISC
+- Version: 1.0.0
+- Keywords: mcp, cargoffer, logistics, freight, trucking, api, documentation
