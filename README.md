@@ -72,16 +72,24 @@ pnpm dev
 
 ### Connect to Claude Desktop
 
-After running `pnpm dev`, the MCP server will be available at `http://localhost:3000/mcp`. Add this URL to your Claude Desktop MCP configuration:
+This is a Skybridge app frontend. For the actual MCP server that connects to Cargoffer APIs, use:
 
+**For Cargoffer API Docs (Bolsa de Carga):**
 ```json
 {
   "mcpServers": {
     "cargoffer": {
-      "url": "http://localhost:3000/mcp"
+      "command": "npx",
+      "args": ["-y", "@cargoffer/cargo-mcp"]
     }
   }
 }
+```
+
+Or run from source:
+```bash
+git clone https://github.com/cargoffer/cargo_mcp.git
+cd cargo_mcp && npm install && npm start
 ```
 
 ## Tools Available
