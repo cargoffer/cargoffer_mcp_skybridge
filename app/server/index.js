@@ -8,10 +8,10 @@
 import { Server } from '@modelcontextprotocol/sdk/server/index.js';
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js';
 import {
-  CallToolSchema,
-  TextContent,
+  CallToolRequestSchema,
+  ListToolsRequestSchema,
   ToolSchema,
-} from '@modelcontextprotocol/sdk/types';
+} from '@modelcontextprotocol/sdk/types.js';
 
 /**
  * Documentation data (in production, load from OpenAPI specs)
@@ -225,8 +225,13 @@ class Mcpserver {
     );
     
     // Define tools
-    this.server.callTool = this.handleCallTool.bind(this);
-    this.server.listTools = this.listTools.bind(this);
+    this.server.setRequestHandler(ListToolsRequestSchema, async () => {
+      return this.listTools();
+    });
+    
+    this.server.setRequestHandler(CallToolRequestSchema, async (request) => {
+      return this.handleCallTool(request.params.name, request.params.arguments);
+    });
   }
   
   /**

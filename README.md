@@ -234,6 +234,23 @@ DEBUG=false
 - [Skybridge Framework](https://docs.skybridge.tech) - Framework documentation
 - [Model Context Protocol](https://modelcontextprotocol.io/) - MCP specification
 
+## 🔑 How to get your API Key (Required)
+
+To use Cargoffer MCP with live API calls, you need a **Cargoffer API Key**. Free tier available.
+
+**Get your API key:**
+1. Go to **https://cargoffer.com** or **https://transcend.cargoffer.com**
+2. Create an account / Log in
+3. Go to **Dashboard → Developers → API Keys → Generate Key**
+4. Copy the key and set it as `CARGOFFER_API_KEY` environment variable
+
+```bash
+export CARGOFFER_API_KEY="your-key-here"
+npx @cargoffer/mcp-skybridge
+```
+
+> 💡 **Need enterprise access?** Cargoffer offers TRANSCEND TMS, Bolsa de Carga (freight marketplace), and eCMR/DeCA (digital CMR) with dedicated support. Contact **developers@cargoffer.com** or visit **https://cargoffer.com**.
+
 ## Tech Stack
 
 - [Skybridge](https://skybridge.tech) - MCP Apps framework
